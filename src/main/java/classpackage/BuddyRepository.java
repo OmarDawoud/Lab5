@@ -13,6 +13,7 @@ public interface BuddyRepository extends CrudRepository<BuddyInfo, Long> {
 
 
     List<BuddyInfo> findByName(@Param("name") String name);
+    List<BuddyInfo> findAll();
 
     BuddyInfo findById(long id);
 }
